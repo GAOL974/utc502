@@ -1,0 +1,11 @@
+[Unit]
+Description=Best Game of the World Service
+
+[Service]
+Type=simple
+ExecStart=/bin/best_game_of_the_world.sh
+Restart=always
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target
