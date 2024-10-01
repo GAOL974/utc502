@@ -1,0 +1,3 @@
+sudo adduser apprenant1
+sudo groupadd etudiants
+sudo usermod -aG etudiants apprenant1
