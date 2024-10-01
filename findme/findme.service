@@ -1,0 +1,11 @@
+[Unit]
+Description=FindMe Service - Search and delete FindMe.txt
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/findme.sh /home /tmp /var
+User=root
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

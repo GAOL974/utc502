@@ -1,0 +1,10 @@
+[Unit]
+Description=Restarting in 1 minute.
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+Unit=findme.service
+
+[Install]
+WantedBy=timers.target
